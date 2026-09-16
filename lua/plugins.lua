@@ -20,7 +20,7 @@ return {
       { "<leader>ro", ":noautocmd MoltenEnterOutput<cr>", desc = "Enter cell output" },
     },
     dependencies = {
-      "echasnovski/mini.comment",
+      "nvim-mini/mini.comment",
       -- "hkupty/iron.nvim", -- repl provider
       -- "akinsho/toggleterm.nvim", -- alternative repl provider
       "benlubas/molten-nvim", -- alternative repl provider
@@ -33,7 +33,7 @@ return {
     end,
   },
   {
-    "echasnovski/mini.hipatterns",
+    "nvim-mini/mini.hipatterns",
     event = "VeryLazy",
     dependencies = { "GCBallesteros/NotebookNavigator.nvim" },
     opts = function()
@@ -44,7 +44,7 @@ return {
     end,
   },
   {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     event = "VeryLazy",
     dependencies = { "GCBallesteros/NotebookNavigator.nvim" },
     opts = function()
@@ -62,7 +62,7 @@ return {
     init = function()
       -- these are examples, not defaults. Please see the readme
       vim.g.molten_image_provider = "image.nvim"
-      vim.g.molten_output_win_max_height = 20
+      vim.g.molten_output_win_max_height = math.huge
     end,
   },
   {
@@ -77,6 +77,7 @@ return {
       window_overlap_clear_enabled = true, -- toggles images when windows are overlapped
       hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.svg" },
       window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },
+      tmux_show_only_in_active_window = true, -- auto show/hide images in the correct Tmux window (needs visual-activity off)
     },
   },
   {
@@ -94,7 +95,7 @@ return {
       -- Only one of these is needed.
       --"nvim-telescope/telescope.nvim", -- optional
       --"ibhagwan/fzf-lua",              -- optional
-      --"echasnovski/mini.pick",         -- optional
+      --"nvim-mini/mini.pick",         -- optional
       "folke/snacks.nvim", -- optional
     },
     keys = {
@@ -125,7 +126,7 @@ return {
     ft = { "markdown" },
   },
   {
-    "echasnovski/mini.surround",
+    "nvim-mini/mini.surround",
     version = false,
     opts = {
       -- Add custom surroundings to be used on top of builtin ones. For more
