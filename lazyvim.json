@@ -1,6 +1,9 @@
 {
   "extras": [
     "lazyvim.plugins.extras.editor.dial",
+    "lazyvim.plugins.extras.lang.angular",
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.docker",
     "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.go",
@@ -8,6 +11,7 @@
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.lang.kotlin",
     "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.nix",
     "lazyvim.plugins.extras.lang.php",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.rust",
@@ -20,7 +24,7 @@
   ],
   "install_version": 8,
   "news": {
-    "NEWS.md": "10960"
+    "NEWS.md": "11866"
   },
   "version": 8
 }
